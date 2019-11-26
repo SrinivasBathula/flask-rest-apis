@@ -13,12 +13,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'srinu'
 api = Api(app)
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
 jwt = JWT(app, authenticate, identity)
-
 
 # http://127.0.0.1:5000/item/<name>
 api.add_resource(Store, '/store/<string:name>')
