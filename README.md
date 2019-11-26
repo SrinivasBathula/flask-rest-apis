@@ -1,5 +1,5 @@
-# Flask Rest APIs
+# flask-rest-apis
 
 ```
-test repository
+Flask-app deploy to heroku
 ```
